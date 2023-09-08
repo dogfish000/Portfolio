@@ -1,0 +1,81 @@
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.frontpage {
+  height: 500px;
+  background-color: black;
+  position: relative;;
+  
+}
+
+.frontimg {
+  width: 50%;
+  height: 75%;
+  position: absolute;
+  top: 12.5%;
+  left: 25%;
+}
+
+.githubicn {
+  width: 4%;
+  height: 5%;
+  position: absolute;
+  top: 47.5%;
+  left: 1%;
+}
+
+.intro {
+  height: 500px
+
+}
+
+.githubbdg {
+  width: 80%;
+  height: 40%;
+}
+
+.bojbdg {
+  width: 80%
+  height: 40%
+}
+
+
+
+.project {
+  height: 300px;
+  background-color: lightgray;
+}
+
+.skills {
+  height: 300px;
+}
+
+.footer {
+  height: 50px;
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-provided {
+  display: none;
+}
+
+
+@media (max-width: 470px) {
+  main,
+  section,
+  nav,
+  footer {
+    display: none !important;
+  }
+  .not-provided {
+    display: block;
+  }
+}
