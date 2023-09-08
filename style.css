@@ -2,11 +2,13 @@
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+
+
 .frontpage {
-  height: 500px;
+  height: 350px;
   background-color: black;
-  position: relative;;
-  
+  position: relative;
+  border-bottom: 1px dashed white;
 }
 
 .frontimg {
@@ -18,42 +20,84 @@
 }
 
 .githubicn {
-  width: 4%;
+  width: 3%;
   height: 5%;
   position: absolute;
-  top: 47.5%;
+  top: 40%;
   left: 1%;
 }
 
-.intro {
-  height: 500px
+.opggimg {
+  width: 5%;
+  position: absolute;
+  bottom: 40%;
+  left: 0.5%;
+}
 
+.intro {
+  height: 100px;
+  display: flex;
+  background-color: black;
+  border-bottom: 1px dashed white;
 }
 
 .githubbdg {
-  width: 80%;
-  height: 40%;
+  width: 50%;
+  padding-left: 3%;
+  
 }
 
 .bojbdg {
-  width: 80%
-  height: 40%
+  width: 40%;
+  margin: 0 auto;
 }
-
 
 
 .project {
-  height: 300px;
-  background-color: lightgray;
+  height: 1000px;
+  background-color: black;
+  color: white;
+  border-bottom: 1px dashed white;
+  padding: 2.5% 5%;
 }
 
-.skills {
-  height: 300px;
+.carousel .carousel-item {
+  height: 900px;
 }
+
+.carousel-item img {
+    position: absolute;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+    min-height: 900px;
+}
+
+
+
+.skills {
+  height: 1000px;
+  background-color: black;
+  color: white;
+  padding: 2.5% 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills > div {
+  text-align: justify;
+}
+
+.qwer {
+  padding: 2.5% 5%;
+}
+
+
+
 
 .footer {
   height: 50px;
-  background-color: black;
+  background-color: rgb(99, 99, 99);
   color: white;
   position: fixed;
   bottom: 0;
@@ -79,3 +123,82 @@
     display: block;
   }
 }
+
+@media screen and (min-width: 471px) {
+  .frontpage {
+    height: 350px;
+  }
+
+  .skillqwer {
+    font-size: small;
+  }
+  
+}
+
+
+@media screen and (min-width: 701px) {
+  .frontpage {
+    height: px;
+  }
+
+  .intro {
+    height: 100px;
+  }
+
+  .bojbdg {
+    width: 35%;
+  }
+
+  .skillqwer {
+    font-size: medium;
+  }
+  
+}
+
+@media screen and (min-width: 831px) {
+  .frontpage {
+    height: 500px;
+  }
+
+  .intro {
+    height: 150px;
+  }
+
+  .bojbdg {
+    width: 35%;
+  }
+
+  .skillqwer {
+    font-size: large;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .frontpage {
+    height: 770px;
+  }
+  .intro {
+    height: 200px;
+  }
+  .skillqwer {
+    font-size: larger;
+  }
+} 
+
+@media screen and (min-width: 1401px) {
+  .frontpage {
+    height: 1080px;
+  }
+  .intro {
+    height: 300px;
+  }
+
+  .skillqwer {
+    font-size: x-large;
+  }
+} 
+
+
+
+
+
